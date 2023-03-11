@@ -1,0 +1,15 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+ }
+
+ 
+ .homeBack{
+    background-image: url(mockups/HomeBackground.jpg);
+    background-size: 47.5%;
+    height: 720px;
+    background-repeat: no-repeat;
+ }
