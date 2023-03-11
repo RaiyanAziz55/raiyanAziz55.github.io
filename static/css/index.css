@@ -1,15 +1,18 @@
 
-*{
+body{
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    width: 100%;
     box-sizing: border-box; 
+
  }
 
  
- .homeBack{
-    background-image: url(mockups/HomeBackground.jpg);
-    background-size: 47.5%;
-    height: 720px;
+ .container{
+   background-color: antiquewhite;
+    background-image: url(mockups/HomeBackground2.jpg);
+    background-size: 40% ;
+    background-position: 80% 5%;
     background-repeat: no-repeat;
+    overflow-y: scroll;
  }
