@@ -10,7 +10,7 @@ body{
 
 .container{
  background-color: antiquewhite;
-  background-image: url(mockups/HomeBack2.jpg); 
+  background-image: url(../mockups/HomeBack2.jpg); 
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,12 +94,12 @@ body{
 
 @font-face {
  font-family: 'Kingkey';
- src: url("mockups/KingkeyDemoBlack-nRw40.ttf")
+ src: url("../mockups/KingkeyDemoBlack-nRw40.ttf")
  format("openType");
 }
 
 @font-face {
   font-family: 'Exclusive';
-  src: url("mockups/Exclusive-MVqZP.ttf")
+  src: url("../mockups/Exclusive-MVqZP.ttf")
   format("openType");
  }
