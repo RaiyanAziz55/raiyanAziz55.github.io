@@ -4,7 +4,8 @@ body{
   margin: 0;
   width: 100vw;
   height: 108vh;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 
@@ -101,5 +102,11 @@ body{
 @font-face {
   font-family: 'Exclusive';
   src: url("../mockups/Exclusive-MVqZP.ttf")
+  format("openType");
+ }
+
+ @font-face {
+  font-family: 'Schoon';
+  src: url("../mockups/SchoonheidContextualCapitals-1GvB0.otf")
   format("openType");
  }
