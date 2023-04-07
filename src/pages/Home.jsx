@@ -17,8 +17,12 @@ function Home(){
                   </div>
                    
             </div>
+        <div className='contents'>
+          <img src="./mockups/HomeBackground2.jpg" id="img"></img>
+        </div>
         </body>
         </div>
+
           )
 }
 
