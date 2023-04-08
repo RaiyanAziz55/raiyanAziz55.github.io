@@ -1,29 +1,42 @@
 import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
+import Image from './mockups/HomeBackground2.jpg';
 
 
-function Home(){
-    return (
-        <div>
-        <body className="container">
-        <Navbar />
+function Home() {
+  return (
+    <div>
+      <body>
+        <div className="container">
+          <Navbar />
+          <div>
+
+            <h1 id="introText">BRAND NAME</h1>
             <div>
-                <h1 id="introText">BRAND NAME</h1>
-                <div>
-                    <div className="btn btn-one">
-                      <span>EXPLORE</span>
-                    </div>
-                  </div>
-                   
+              <div className="btn btn-one">
+                <span>EXPLORE</span>
+              </div>
             </div>
-        <div className='contents'>
-          <img src="./mockups/HomeBackground2.jpg" id="img"></img>
-        </div>
-        </body>
-        </div>
+          </div>
 
-          )
+        </div>
+        <div className='contents'>
+          <div id="t1">
+            <text id="slogan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint aliquam voluptate atque nihil voluptatibus non voluptates est impedit, molestias laudantium quos tempora, explicabo magni officiis veniam dolorem cupiditate ullam.</text>
+          </div>
+          <img src={Image} alt="Girl in a jacket" id="img"></img>
+        </div>
+        <div className='section'>
+          <h1 className="category">PORTFOLIO</h1>
+        </div>
+        <div className='section'>
+          <h1 className="category">SERVICES</h1>
+        </div>
+      </body>
+    </div>
+
+  )
 }
 
 export default Home;
