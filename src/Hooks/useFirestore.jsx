@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { projectFirestore } from "../Firebase/config";
+import { projectFirestore } from "../Firebase/Config";
 import React from 'react';
 
-const useFirestore = (collection) => {
+const UseFirestore = (collection) => {
     const [docs, setDocs] = useState([]);
 
     useEffect(() => {
@@ -21,4 +21,4 @@ const useFirestore = (collection) => {
     return { docs };
 }
 
-export default useFirestore;
+export default UseFirestore;
