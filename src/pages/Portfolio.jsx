@@ -1,10 +1,11 @@
 import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
-import useFirestore from '../Hooks/UseFirestore';
+import useFirestore from '../Hooks/useFirestore';
 
 function Portfolio() {
-
+  const { docs } = useFirestore("FFHPHOTOSHOOT");
+  console.log(docs);
   return (
     <div>
       <body >
@@ -13,7 +14,7 @@ function Portfolio() {
           <h1>Portfolio</h1>
           <div>
             <div>
-              <span>EXPLORE</span>
+              <span>EXPLORE Chicekn</span>
             </div>
           </div>
 
