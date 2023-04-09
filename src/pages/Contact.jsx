@@ -5,20 +5,20 @@ import Navbar from "../components/Navbar";
 
 function Contact() {
     return (
-        <div>
-            <body >
-                <Navbar />
-                <div>
-                    <h1>Contact</h1>
-                    <div>
-                        <div>
-                            <span>EXPLORE</span>
-                        </div>
-                    </div>
 
+        <body >
+            <Navbar />
+            <div>
+                <h1>Contact</h1>
+                <div>
+                    <div>
+                        <span>EXPLORE</span>
+                    </div>
                 </div>
-            </body>
-        </div>
+
+            </div>
+        </body>
+
     )
 }
 

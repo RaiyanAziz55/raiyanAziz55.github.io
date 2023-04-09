@@ -7,7 +7,7 @@ const UseFirestore = (collection) => {
 
     useEffect(() => {
         const unsub = projectFirestore.collection(collection)
-            .orderBy('id', 'desc')
+            .orderBy('num', 'desc')
             .onSnapshot((snap) => {
                 let documents = [];
                 snap.forEach(doc => {

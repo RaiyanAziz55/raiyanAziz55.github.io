@@ -3,23 +3,22 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 
 
-function Services(){
-    return (
+function Services() {
+  return (
+
+    <body >
+      <Navbar />
+      <div>
+        <h1>Services</h1>
         <div>
-        <body >
-        <Navbar />
-            <div>
-                <h1>Services</h1>
-                <div>
-                    <div>
-                      <span>EXPLORE</span>
-                    </div>
-                  </div>
-                   
-            </div>
-        </body>
+          <div>
+            <span>EXPLORE</span>
+          </div>
         </div>
-          )
+
+      </div>
+    </body>
+  )
 }
 
 export default Services;

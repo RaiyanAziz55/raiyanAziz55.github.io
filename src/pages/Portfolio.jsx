@@ -4,23 +4,22 @@ import Navbar from "../components/Navbar";
 import useFirestore from '../Hooks/useFirestore';
 
 function Portfolio() {
-  const { docs } = useFirestore("FFHPHOTOSHOOT");
+  const { docs } = useFirestore('FFHPHOTOSHOOT');
   console.log(docs);
   return (
-    <div>
-      <body >
-        <Navbar />
-        <div>
-          <h1>Portfolio</h1>
-          <div>
-            <div>
-              <span>EXPLORE Chicekn</span>
-            </div>
+    <body >
+      <Navbar />
+      <div>
+        {docs && docs.map(doc => (
+          <div className='img-wrap' key={doc.id}>
+            <img src={doc.url} alt="pcs"></img>
           </div>
+        ))}
 
-        </div>
-      </body>
-    </div>
+
+      </div>
+    </body>
+
   )
 }
 
