@@ -1,25 +1,26 @@
 import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
+import useFirestore from '../Hooks/useFirestore';
 
+function Portfolio() {
 
-function Portfolio(){
-    return (
-        <div>
-        <body >
+  return (
+    <div>
+      <body >
         <Navbar />
+        <div>
+          <h1>Portfolio</h1>
+          <div>
             <div>
-                <h1>Portfolio</h1>
-                <div>
-                    <div>
-                      <span>EXPLORE</span>
-                    </div>
-                  </div>
-                   
+              <span>EXPLORE</span>
             </div>
-        </body>
+          </div>
+
         </div>
-          )
+      </body>
+    </div>
+  )
 }
 
 export default Portfolio;

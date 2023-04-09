@@ -1,3 +1,7 @@
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/storage';
+import 'firebase/compat/firestore';
+import React from 'react';
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyALe8EudOGzIj-jeSqehf_GOHFMU9cY--Y",
@@ -9,4 +13,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+
+
+const projectFirestore = firebase.firestore();
+
+export { projectFirestore };
