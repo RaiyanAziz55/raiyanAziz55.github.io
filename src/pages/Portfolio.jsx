@@ -2,6 +2,7 @@ import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
 import useFirestore from '../Hooks/useFirestore';
+import './pageCss/Portfolio.css';
 
 function Portfolio() {
   const { docs } = useFirestore('FFHPHOTOSHOOT');
