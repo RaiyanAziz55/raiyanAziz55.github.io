@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: rgb(14, 14, 15);
-  overflow: visible;
+  overflow: hidden;
 
 }
 
@@ -34,8 +34,6 @@ body {
   overflow-y: hidden;
 }
 
-
-
 #introText {
   width: 30%;
   height: 32.5vh;
@@ -43,8 +41,8 @@ body {
   font-family: "Kingkey";
   font-size: 200px;
   color: aliceblue;
-  left: 10%;
-  bottom: 15vh;
+  left: 17.5%;
+  bottom: 5vh;
   text-align: center;
 }
 
@@ -54,7 +52,7 @@ body {
   text-align: center;
   width: 400px;
   cursor: pointer;
-  left: 15%;
+  left: 23%;
   bottom: 5vh;
 }
 
