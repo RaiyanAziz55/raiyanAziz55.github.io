@@ -5,8 +5,8 @@ body {
   height: 10%;
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: rgb(14, 14, 15);
-  overflow: hidden;
+  background-color: rgb(0, 9, 32);
+  overflow: visible;
 
 }
 
@@ -16,14 +16,12 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-size: 100%;
-  background-position: top;
+  background-size: cover;
+  background-position: 65% 60%;
   background-repeat: no-repeat;
   overflow-x: hidden;
   overflow-y: hidden;
   background-attachment: scroll;
-
-
 }
 
 .contents {
@@ -37,16 +35,22 @@ body {
 #introText {
   width: 30%;
   height: 32.5vh;
-  position: relative;
+  position: absolute;
   font-family: "Kingkey";
-  font-size: 200px;
-  color: aliceblue;
-  left: 17.5%;
-  bottom: 5vh;
+  font-size: 15vw;
+  color: rgb(190, 188, 70);
+  left: 10vw;
+  top: 50px;
   text-align: center;
+
+}
+
+:root {
+  --fs-xl: 15vw;
 }
 
 .btn {
+  display: none;
   line-height: 70px;
   height: 75px;
   text-align: center;
@@ -139,9 +143,10 @@ body {
 }
 
 #slogan {
-  color: aliceblue;
+  color: rgb(190, 188, 70);
   font-size: 250%;
-  font-family: "Exclusive";
+  font-family: "beck";
+  font-weight: lighter;
 }
 
 .category {
@@ -150,6 +155,10 @@ body {
   top: 18.75%;
   left: 5%;
 }
+
+
+
+
 
 
 @font-face {
@@ -170,4 +179,9 @@ body {
 @font-face {
   font-family: "Schoon";
   src: url("../mockups/SchoonheidContextualCapitals-1GvB0.otf") format("openType");
+}
+
+@font-face {
+  font-family: "beck";
+  src: url("../mockups/beck.ttf") format("openType");
 }

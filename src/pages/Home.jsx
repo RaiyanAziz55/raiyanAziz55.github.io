@@ -11,7 +11,7 @@ function Home() {
         <Navbar />
         <div>
 
-          <h1 id="introText">BRAND NAME</h1>
+          <h1 id="introText">LUMIN FILMS</h1>
           <div>
             <div className="btn btn-one">
               <span>EXPLORE</span>
