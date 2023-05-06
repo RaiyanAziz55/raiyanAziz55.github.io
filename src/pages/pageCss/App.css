@@ -45,10 +45,6 @@ body {
 
 }
 
-:root {
-  --fs-xl: 15vw;
-}
-
 .btn {
   display: none;
   line-height: 70px;
@@ -155,10 +151,6 @@ body {
   top: 18.75%;
   left: 5%;
 }
-
-
-
-
 
 
 @font-face {

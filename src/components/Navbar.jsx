@@ -2,24 +2,23 @@ import React from 'react';
 import './css/Navbar.css';
 import { Link } from "react-router-dom";
 
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar')[0];
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
-
-
+if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+}
 
 export default function Navbar() {
-
-
     return (
         <nav className='nav'>
-            <a href='#' class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <a href='#' className="toggle-button">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </a>
             <div className='navbar'>
                 <ul>
