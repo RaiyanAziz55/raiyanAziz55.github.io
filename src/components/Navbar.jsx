@@ -1,34 +1,44 @@
-import React from 'react';
+import React, {useState} from "react";
 import './css/Navbar.css';
 import { Link } from "react-router-dom";
 
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbarLinks = document.getElementsByClassName('navbar')[0];
-
-if (toggleButton) {
-    toggleButton.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
-    })
-}
 
 export default function Navbar() {
+    const [isMenu, setIsMenu] = useState(false);
+
+
+    const showMenu = () => setIsMenu(!isMenu);
+
+
+
     return (
         <nav className='nav'>
-            <a href='#' className="toggle-button">
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </a>
-            <div className='navbar'>
+            <div className={isMenu ? 'navbar active' : 'navbar'}>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/portfolio">Portfolio</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/contact">Contact </Link></li>
                 </ul>
             </div>
+            <button className={isMenu ? 'hamburg active' : 'hamburg'} onClick={showMenu}>
+                    <div className='bar'></div>
+                </button>
         </nav >
     )
 
 }
+
+/*
+window.onload=function(){
+const menu = document.querySelector('.hamburg');
+const menu2 = document.querySelector('.navbar');
+console.log(menu);
+console.log(menu2);
+menu.addEventListener('click', function (){
+    menu.classList.toggle('active');
+    menu2.classList.toggle('active');
+})
+}*/

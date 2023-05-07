@@ -4,6 +4,7 @@ import App from './App';
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
+import About from "./pages/About";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "portfolio",
     element: <Portfolio />,
+  },
+  {
+    path: "about",
+    element: <About />,
   },
   {
     path: "services",
