@@ -18,8 +18,10 @@ function Home() {
           <text className='introPara'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse est corporis praesentium ad quo maiores, harum deserunt reiciendis dolorem maxime iusto distinctio labore iure rerum earum illum illo consequatur totam!</text>
       </header>
       <section className='contents'>
+        <div className='inside'>
         <h1 id="slogan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint aliquam voluptate atque nihil voluptatibus non voluptates est impedit, molestias laudantium quos tempora, explicabo magni officiis veniam dolorem cupiditate ullam.</h1>
         <img src={Image2} alt="Girl in a jacket" id="img"></img>
+        </div>
       </section>
       <section className='section'>
         <h1 className="category">PORTFOLIO</h1>
