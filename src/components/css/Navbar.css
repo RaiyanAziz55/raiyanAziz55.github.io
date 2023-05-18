@@ -8,7 +8,9 @@ body {
 }
 
 .nav {
+border-bottom: 3px solid rgb(190, 188, 70);
   justify-content: space-between;
+  height: 6.5%;
   align-items: center;
   background-color: rgb(0, 9, 32);
   position: fixed;
@@ -30,6 +32,23 @@ body {
 .navbar li {
   list-style: none;
 
+}
+
+.dropdown-content {
+position: relative;
+bottom: 3px;
+background-color: rgb(0, 9, 32);
+border-top: none;
+padding: 5px;
+border-right:  3px solid rgb(190, 188, 70);
+border-bottom: 3px solid rgb(190, 188, 70);
+border-left: 3px solid rgb(190, 188, 70);
+transition: 0.5s;
+transition-delay: 0.5s;
+display: none;
+}
+.dropdown-content.is-visible {
+  display: block;
 }
 
 .navbar li a {
@@ -87,6 +106,10 @@ body {
 
 
 @media (width <=700px) {
+  .dropdown-content {
+    font-size: 15px;
+    border: none;
+  }
   .hamburg{
     display: block;
     z-index: 2;
@@ -109,6 +132,9 @@ body {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+    border: none;
+    background-color: none;
+    height: 0;
   }
 
   .navbar ul {
