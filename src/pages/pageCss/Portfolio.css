@@ -9,7 +9,9 @@ body {
 
 
 }
-
+.img-wrap {
+    display: none;
+}
 img {
     position: relative;
     height: 300px;

@@ -24,11 +24,18 @@ function Home() {
 };
 
 const items = [
-  <div className="item" data-value="1">1</div>,
-  <div className="item" data-value="2">2</div>,
-  <div className="item" data-value="3">3</div>,
-  <div className="item" data-value="4">4</div>,
-  <div className="item" data-value="5">5</div>,
+  <div className='item'>
+  <img src={img1} id="img1" key="1"/>
+  </div>,
+  <div className='item'>
+  <img src={img2} id="img1" key="2"/>
+  </div>,
+  <div className='item'>
+  <img src={img3} id="img1" key="3"/>
+  </div>,
+  <div className='item'>
+  <img src={img4} id="img1" key="4"/>
+  </div>,
 ];
 
   return (
@@ -47,18 +54,25 @@ const items = [
         </div>
       </section>
       <section className='section1'>
+        <h1 className="category">SERVICES</h1>
+      </section>
+      <section className='section2'>
         <h1 className="category">PORTFOLIO</h1>
+        <div className='slider'>
         <AliceCarousel
-        mouseTracking
+      infinite={true}
+        autoPlay={true}
+        autoPlayInterval={2000}
+        mouseTracking = {false}
+        paddingLeft={50}
         items={items}
         responsive={responsive}
         controlsStrategy="alternate"
     />
-      </section>
-      <section className='section2'>
-        <h1 className="category">SERVICES</h1>
+    </div>
       </section>
       </div>
+      
     </body>
 
   )
