@@ -10,12 +10,18 @@ body {
 
 }
 .img-wrap {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+grid-column-end: 3;
 }
+
+
 img {
-    position: relative;
-    height: 300px;
-    width: 200px;
-    float: left;
-    padding: 2%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }

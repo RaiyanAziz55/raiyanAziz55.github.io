@@ -60,6 +60,7 @@ const items = [
         <h1 className="category">PORTFOLIO</h1>
         <div className='slider'>
         <AliceCarousel
+         autoPlayStrategy={'none'}
       infinite={true}
         autoPlay={true}
         autoPlayInterval={2000}
