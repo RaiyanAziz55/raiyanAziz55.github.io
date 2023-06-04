@@ -69,14 +69,4 @@ export default function Navbar() {
 
 }
 
-/*
-window.onload=function(){
-const menu = document.querySelector('.hamburg');
-const menu2 = document.querySelector('.navbar');
-console.log(menu);
-console.log(menu2);
-menu.addEventListener('click', function (){
-    menu.classList.toggle('active');
-    menu2.classList.toggle('active');
-})
-}*/
+

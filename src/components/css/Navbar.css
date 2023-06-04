@@ -93,6 +93,10 @@ display: none;
   transition: 0.4s;
 } 
 
+.nav.hidden{
+  display: none;
+}
+
 .hamburg.active:before{
   transform: rotate(-45deg) translate(-6px, 6px);
 }
