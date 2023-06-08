@@ -1,22 +1,22 @@
-import './pageCss/App.css';
+import './pageCss/services.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
+import { ParallaxBanner, ParallaxProvider, ParallaxBannerLayer } from "react-scroll-parallax";
+import aboutMeIMg from './mockups/HomeBack4.jpg';
 
 
 function Services() {
   return (
-
     <body >
       <Navbar />
-      <div>
-        <h1>Services</h1>
-        <div>
-          <div>
-            <span>EXPLORE</span>
-          </div>
-        </div>
-
-      </div>
+    <div className="container-body">
+    <ParallaxProvider>
+    <ParallaxBanner
+      layers={[{ image: aboutMeIMg, speed: -15 }]}
+      className="pp"
+    />
+      </ParallaxProvider>
+    </div>
     </body>
   )
 }
