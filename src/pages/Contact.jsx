@@ -1,8 +1,8 @@
-import './pageCss/App.css';
+import './pageCss/contact.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
-
-
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
+import img from './mockups/HomeBack4.jpg';
 
 export default function Contact() {
     return (
@@ -10,14 +10,14 @@ export default function Contact() {
         <body >
             <Navbar />
             <div>
-                <h1>Contact</h1>
-                <div>
-                    <div>
-                        <span>EXPLORE</span>
-                    </div>
-                </div>
-
+                <ParallaxProvider>
+            <ParallaxBanner
+      layers={[{ image: img, speed: -15 }]}
+      className="pic"
+    />
+    </ParallaxProvider>
             </div>
+
         </body>
 
     )

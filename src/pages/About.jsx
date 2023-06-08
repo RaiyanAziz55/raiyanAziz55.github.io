@@ -4,18 +4,20 @@ import Navbar from "../components/Navbar";
 import aboutMeIMg from './mockups/aboutMe.jpg';
 import cameraImg from "./mockups/camera.jpg";
 import  ParallaxEffect from "../components/ParallaxEffect";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
 export default function About() {
   return (
-    <ParallaxProvider>
       <body>
         <Navbar />
         <section className='firstPart'>
           <div>
-            <ParallaxEffect imgsrc={aboutMeIMg} height="100%" opacity=".5">
-                <div></div>
-            </ParallaxEffect>
+          <ParallaxProvider>
+            <ParallaxBanner
+      layers={[{ image: aboutMeIMg, speed: -15 }]}
+      className="pic"
+    />
+    </ParallaxProvider>
           </div>
           <div className='txtCont1'>
             <h1 className='title'>ABOUT ME</h1>
@@ -41,15 +43,10 @@ export default function About() {
               </text>
             </div>
           </div>
-          <div>
-            <ParallaxEffect imgsrc={cameraImg} height="100%" opacity=".5">
-                <div></div>
-            </ParallaxEffect>
-          </div>
         </section>
         <section></section>
       </body>
-      </ParallaxProvider>
+
   );
 }
 

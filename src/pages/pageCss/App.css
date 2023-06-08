@@ -113,9 +113,6 @@ object-position: 65% 60%;
   position: absolute;
   left: 60%;
   bottom: 12.5vh;
-  perspective: 10px;
-  transform-style: preserve-3d;
-  transform: translateZ(-10px) scale(2);
 }
 
 
