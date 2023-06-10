@@ -2,8 +2,6 @@ import './pageCss/about.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
 import aboutMeIMg from './mockups/aboutMe.jpg';
-import cameraImg from "./mockups/camera.jpg";
-import  ParallaxEffect from "../components/ParallaxEffect";
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
 export default function About() {

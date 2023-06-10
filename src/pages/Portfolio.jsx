@@ -13,7 +13,7 @@ function Portfolio() {
       <Navbar />
       <div className='img-wrap'>
         {imgs && imgs.map((img) => (
-          <img src={img.url} alt="Image" key={img.id} />
+          <img src={img.url} alt="sumthing" key={img.id} />
         ))}
       </div>
     </body>

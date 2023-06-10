@@ -1,6 +1,5 @@
 import './pageCss/App.css';
-import React, {useState, useEffect, useRef} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import Navbar from "../components/Navbar";
 import Image from './mockups/HomeBack4.jpg';
 import Image2 from './mockups/HomeBackground2.jpg';
@@ -25,16 +24,16 @@ function Home() {
 
 const items = [
   <div className='item'>
-  <img src={img1} id="img1" key="1"/>
+  <img src={img1} alt="img1" id="img1" key="1"/>
   </div>,
   <div className='item'>
-  <img src={img2} id="img1" key="2"/>
+  <img src={img2}  alt="img2" id="img1" key="2"/>
   </div>,
   <div className='item'>
-  <img src={img3} id="img1" key="3"/>
+  <img src={img3}  alt="img3" id="img1" key="3"/>
   </div>,
   <div className='item'>
-  <img src={img4} id="img1" key="4"/>
+  <img src={img4}  alt="img4" id="img1" key="4"/>
   </div>,
 ];
 
@@ -43,14 +42,14 @@ const items = [
       <Navbar />
       <div className="container">
       <header>
-          <img src={Image} className='background'></img>
+          <img src={Image} alt="background" className='background'></img>
           <text id="introText">LUMIN FILMS</text>
           <text className='introPara'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse est corporis praesentium ad quo maiores, harum deserunt reiciendis dolorem maxime iusto distinctio labore iure rerum earum illum illo consequatur totam!</text>
       </header>
       <section className='contents'>
         <div className='inside'>
         <h1 ref={txtRef} className={txtView ? 'slogan fade-in2 is-visible':'img fade-in2'}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint aliquam voluptate atque nihil voluptatibus non voluptates est impedit, molestias laudantium quos tempora, explicabo magni officiis veniam dolorem cupiditate ullam.</h1>
-        <img src={Image2} ref={imgRef} className={imgView ? 'img fade-in is-visible':'img fade-in'}/>
+        <img src={Image2} alt="introImg" ref={imgRef} className={imgView ? 'img fade-in is-visible':'img fade-in'}/>
         </div>
       </section>
       <section className='section1'>
