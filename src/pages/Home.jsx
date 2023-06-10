@@ -1,7 +1,8 @@
 import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
-import Image from './mockups/HomeBack4.jpg';
+import Image from './mockups/HomeBack4h.png';
+import Image3 from './mockups/HomeBack42.png';
 import Image2 from './mockups/HomeBackground2.jpg';
 import { useInView } from 'react-intersection-observer';
 import AliceCarousel from 'react-alice-carousel';
@@ -10,6 +11,7 @@ import img1 from './mockups/IMG4.jpg';
 import img2 from './mockups/IMG2.jpg';
 import img3 from './mockups/IMG3.jpg';
 import img4 from './mockups/IMG1.jpg';
+
 
 
 function Home() {
@@ -43,6 +45,7 @@ const items = [
       <div className="container">
       <header>
           <img src={Image} alt="background" className='background'></img>
+          <img src={Image3} alt="background" className='background2'></img>
           <text id="introText">LUMIN FILMS</text>
           <text className='introPara'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse est corporis praesentium ad quo maiores, harum deserunt reiciendis dolorem maxime iusto distinctio labore iure rerum earum illum illo consequatur totam!</text>
       </header>
