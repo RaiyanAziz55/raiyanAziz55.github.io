@@ -49,7 +49,7 @@ export default function Navbar() {
                      onMouseEnter={() => setIsShow(true)}
                      onMouseLeave={handleMouseLeave}
                 >
-                     Portfolio</Link>
+                     Portfolio⁝</Link>
                     <div ref={elementRef2} className={isShow ? 'dropdown-content is-visible' : 'dropdown-content'}  onMouseLeave={handleMouseLeave2}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Home</Link></li>

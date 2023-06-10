@@ -43,11 +43,11 @@ padding: 5px;
 border-right:  3px solid rgb(190, 188, 70);
 border-bottom: 3px solid rgb(190, 188, 70);
 border-left: 3px solid rgb(190, 188, 70);
-transition: 0.5s;
-transition-delay: 0.5s;
+
 display: none;
 }
 .dropdown-content.is-visible {
+  transition: 1.5s;
   display: block;
 }
 
