@@ -43,6 +43,9 @@ header {
 #introText {
   transform: translateZ(-10px) scale(2.2) scale(1, 2);
 }
+.introPara {
+  transform: translateZ(-10px) scale(2.2);
+}
 
 .contents {
   background-color: rgb(190, 188, 70);
@@ -114,9 +117,10 @@ object-position: 65% 60%;
   font-family: "beck";
   font-size: 1.5vw;
   color: rgb(190, 188, 70);
-  left: 7.5vw;
-  top: 70vh;
+  left: 0;
+  top: 100vh;
   text-align: left;
+  object-fit: cover;
 }
 
 .img {
