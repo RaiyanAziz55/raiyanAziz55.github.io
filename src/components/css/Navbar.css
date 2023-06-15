@@ -7,11 +7,17 @@ body {
   padding: 0;
 }
 
+.logo{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -90px;
+  left: 10px;
+}
+
 .nav {
-border-bottom: 3px solid rgb(190, 188, 70);
-  justify-content: space-between;
+  justify-content: center;
   height: 6.5%;
-  align-items: center;
   background-color: rgb(0, 9, 32);
   position: fixed;
   width: 100%;
@@ -61,6 +67,7 @@ display: none;
   padding: 5px;
   display: flex;
   justify-content: center;
+  align-items: center;
   transition: color .3s ease-in-out, box-shadow .6s ease-in-out;
 }
 

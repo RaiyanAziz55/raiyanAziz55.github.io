@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react";
 import './css/Navbar.css';
 import { Link } from "react-router-dom";
+import img1 from '../pages/mockups/ld.png';
 
 
 

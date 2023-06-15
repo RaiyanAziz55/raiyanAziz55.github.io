@@ -9,6 +9,9 @@ function Portfolio() {
       <div className='portTitle'>
     <h1 >MY COLLECTION</h1>
     </div>
+      <div className='folders'>
+        
+      </div>
 
     </body>
   );
