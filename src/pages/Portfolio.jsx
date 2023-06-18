@@ -10,7 +10,9 @@ function Portfolio() {
     <h1 >MY COLLECTION</h1>
     </div>
       <div className='folders'>
-        
+        <div className='FFH'></div>
+        <div className='Unlucciest'></div>
+        <div className='personal'></div>
       </div>
 
     </body>

@@ -33,3 +33,19 @@ img {
     top: 7.5%;
     color: rgb(190, 188, 70);
 }
+
+.folders{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+grid-column-end: 3;
+}
+
+.Unlucciest{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}

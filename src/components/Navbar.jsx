@@ -1,13 +1,13 @@
 import React, {useState, useRef} from "react";
 import './css/Navbar.css';
 import { Link } from "react-router-dom";
-import img1 from '../pages/mockups/ld.png';
 
 
 
 export default function Navbar() {
     const [isMenu, setIsMenu] = useState(false);
     const [isShow, setIsShow] = useState(false);
+    const [isHighlight, setIsHighlight] = useState(false);
 
     const showMenu = () => setIsMenu(!isMenu);
 
@@ -24,8 +24,9 @@ export default function Navbar() {
         clientY < top
       ) {
         setIsShow(false);
+        setIsHighlight(false);
       } else if (clientY > top + height) {
-        
+        setIsHighlight(true);
     }
 }
 
@@ -38,6 +39,7 @@ export default function Navbar() {
           clientY > top+height 
         ) {
           setIsShow(false);
+          setIsHighlight(false);
         }
       }
 
@@ -49,9 +51,11 @@ export default function Navbar() {
                     <li><Link to="/portfolio" ref={elementRef}
                      onMouseEnter={() => setIsShow(true)}
                      onMouseLeave={handleMouseLeave}
-                >
-                     Portfolio⁝</Link>
-                    <div ref={elementRef2} className={isShow ? 'dropdown-content is-visible' : 'dropdown-content'}  onMouseLeave={handleMouseLeave2}>
+                     className={isHighlight ? 'dropdownPort active' : ''}>
+                     Portfolio ⌵</Link>
+                    <div ref={elementRef2} 
+                    onMouseEnter={() => setIsHighlight(true)}
+                    className={isShow ? 'dropdown-content is-visible' : 'dropdown-content'}  onMouseLeave={handleMouseLeave2}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Home</Link></li>
