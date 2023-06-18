@@ -9,12 +9,19 @@ function Portfolio() {
       <div className='portTitle'>
     <h1 >MY COLLECTION</h1>
     </div>
+  <div className='grids'>
       <div className='folders'>
-        <div className='FFH'></div>
-        <div className='Unlucciest'></div>
-        <div className='personal'></div>
+        <div className='FFH'>
+          <text>hello</text>
+        </div>
+        <div className='Unlucciest'>
+        <text>hello</text>
+        </div>
+        <div className='personal'>
+        <text>hello</text>
+        </div>
       </div>
-
+      </div>
     </body>
   );
 }

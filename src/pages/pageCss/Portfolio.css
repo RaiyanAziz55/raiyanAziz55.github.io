@@ -6,8 +6,6 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: rgb(0, 9, 32);
-
-
 }
 .img-wrap {
     display: grid;
@@ -35,16 +33,34 @@ img {
 }
 
 .folders{
+    position: absolute;
+    top: 20%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 35px;
     justify-content: center;
     align-items: center;
-    grid-column-start: 1;
-grid-column-end: 3;
+}
+
+.grids{
+    display: flex;
+    justify-content: center;
 }
 
 .Unlucciest{
+    height: 600px;
+    width: 400px;
+    background-color: aliceblue;
+}
+
+.FFH{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.personal{
     height: 100%;
     width: 100%;
     background-color: aliceblue;
