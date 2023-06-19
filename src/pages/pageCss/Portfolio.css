@@ -49,6 +49,7 @@ img {
 }
 
 .Unlucciest{
+    position: relative;
     height: 600px;
     width: 400px;
     background-color: aliceblue;
@@ -60,16 +61,29 @@ img {
     width: 400px;
     background-color: aliceblue;
 }
+
+.layer1{
+    background-color: aliceblue;
+
+}
 .t1 {
-    color: rgb(255, 255, 255);
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    position: absolute;
+    top:0;
+    left: 0;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .personal{
+    position: relative;
     height: 600px;
     width: 400px;
     background-color: aliceblue;
@@ -78,4 +92,10 @@ img {
 .section{
     height: 100%;
     width: 100%;
+}
+
+
+.t1:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transform: translateZ(32px);
 }
