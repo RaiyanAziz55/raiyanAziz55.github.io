@@ -56,9 +56,9 @@ export default function Navbar() {
                     <div ref={elementRef2} 
                     onMouseEnter={() => setIsHighlight(true)}
                     className={isShow ? 'dropdown-content is-visible' : 'dropdown-content'}  onMouseLeave={handleMouseLeave2}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/portfolio/ffh">FFH</Link></li>
+                    <li><Link to="/portfolio/unlucciest">Unlucciest</Link></li>
+                    <li><Link to="/portfolio/personal">Personal</Link></li>
                     </div>
                     </li>
                     <li><Link to="/about">About</Link></li>

@@ -5,6 +5,9 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import About from "./pages/About";
+import FFH from "./pages/subpages/FFH";
+import Unlucciest from "./pages/subpages/Unlucciest";
+import Personal from "./pages/subpages/personal";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -31,6 +34,18 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <Contact />,
+  },
+  {
+    path: "portfolio/ffh",
+    element: <FFH />,
+  },
+  {
+    path: "portfolio/unlucciest",
+    element: <Unlucciest />,
+  },
+  {
+    path: "portfolio/personal",
+    element: <Personal />,
   },
 ]);
 
