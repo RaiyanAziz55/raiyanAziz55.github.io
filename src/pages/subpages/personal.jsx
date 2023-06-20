@@ -1,14 +1,19 @@
-
+import ImageGrid from '../../components/ImageGrid';
 import React from 'react';
 import Navbar from "../../components/Navbar";
 
-function Personal() {
-  return (
-    <body >
-      <Navbar />
+import '../pageCss/Portfolio.css';
 
+
+function FFH() {
+
+
+  return (
+    <body>
+      <Navbar />
+      <ImageGrid folderName={"PERSONAL"}/>
     </body>
-  )
+  );
 }
 
-export default Personal;
+export default FFH;

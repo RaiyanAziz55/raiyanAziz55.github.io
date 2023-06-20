@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { db } from "../Firebase/config";
 import { collection, getDocs } from 'firebase/firestore';
 
-const UseFirestore = () => {
+const UseFirestore = (folderName) => { 
   const [imgs, setImgs] = useState([]);
 
-  const collectionRef = collection(db, "FFHPHOTOSHOOT");
+  const collectionRef = collection(db, folderName);
 
   const getImgList = async () => {
     try {

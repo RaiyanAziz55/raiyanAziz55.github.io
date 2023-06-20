@@ -1,24 +1,21 @@
+import ImageGrid from '../../components/ImageGrid';
 import React from 'react';
 import Navbar from "../../components/Navbar";
-import UseFirestore from '../../Hooks/useFirestore';
+
 import '../pageCss/Portfolio.css';
+import Modal from '../../components/Modal';
 
 
-function client() {
-  const { imgs } = UseFirestore();
-  console.log(imgs);
+function FFH() {
+
   
 
   return (
     <body>
       <Navbar />
-      <div className='img-wrap'>
-        {imgs && imgs.map((img) => (
-          <img src={img.url} alt="sumthing" key={img.id} />
-        ))}
-      </div>
+      <ImageGrid folderName={"FFHPHOTOSHOOT"}/>
     </body>
   );
 }
 
-export default client;
+export default FFH;
