@@ -16,6 +16,11 @@ body {
 }
 
 
+.backdrop{
+    background-color: black;
+    z-index: 5;
+}
+
 .img-wrap {
     position: absolute;
     top: 200px;

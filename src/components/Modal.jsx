@@ -1,10 +1,11 @@
 import React from "react";
+import "../../src/pages/pageCss/Portfolio.css";
 
-const Modal = () => {
+const Modal = ( {selectedImg}) => {
     
     return (
         <div className="backdrop">
-            <img src={null} alt = "Image"/>
+            <img src={selectedImg} alt = "Image"/>
         </div>
     )
 
