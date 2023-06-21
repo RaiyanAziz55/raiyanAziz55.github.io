@@ -13,8 +13,9 @@ function Unlucciest() {
   return (
     <body>
       <Navbar />
+      <h1 className='paget1'>UNLUCCIEST COLLECTION</h1>
       <ImageGrid folderName={"UNLUCCIEST"} setSelectedImg = {setSelectedImg}/>
-      <Modal selectedImg = {selectedImg}/>
+      {selectedImg && <Modal selectedImg = {selectedImg} setSelectedImg={setSelectedImg}/>}
     </body>
   );
 }

@@ -11,7 +11,6 @@ function ImageGrid( {folderName, setSelectedImg}) {
 
   return (
     <body>
-      <h1 className='paget1'>FFH COLLECTION</h1>
       <div className='img-wrap'>
         {imgs && imgs.map((img) => (
           <img src={img.url} alt="sumthing" key={img.id} 

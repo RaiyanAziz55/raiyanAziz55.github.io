@@ -1,19 +1,23 @@
 import ImageGrid from '../../components/ImageGrid';
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from "../../components/Navbar";
+import Modal from '../../components/Modal';
 
 import '../pageCss/Portfolio.css';
 
 
-function FFH() {
+function Personal() {
+    const [selectedImg, setSelectedImg] = useState(null);
 
 
   return (
     <body>
       <Navbar />
-      <ImageGrid folderName={"PERSONAL"}/>
+      <h1 className='paget1'>PERSONAL COLLECTION</h1>
+      <ImageGrid folderName={"PERSONAL"}  setSelectedImg = {setSelectedImg}/>
+      {selectedImg && <Modal selectedImg = {selectedImg} setSelectedImg={setSelectedImg}/>}
     </body>
   );
 }
 
-export default FFH;
+export default Personal;
