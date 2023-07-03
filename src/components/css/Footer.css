@@ -1,0 +1,103 @@
+footer {
+    position: relative;
+    background-color: rgb(0, 9, 32);
+    color: rgb(190, 188, 70);
+    padding: 40px 0;
+    overflow-y: hidden;
+    height: 35vh;
+    width: 100vw;
+  }
+
+  .quicklinks ul li{
+    list-style: none;
+    margin: 10px;
+    padding-inline: 10px;
+    font-family: 'Schoon';
+    text-decoration: none!important;
+    color: rgb(190, 188, 70);
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+  }
+
+  .footer-content{
+    width: 100vw;
+  }
+
+  .social{
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 75%;
+  }
+
+  .ql{
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 45%;
+  }
+
+
+
+  .ig{
+
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    text-decoration: none;
+    width: 120px;
+    margin: 10px;
+    padding-inline: 10px;
+    font-family: 'Schoon';
+    text-decoration: none;
+    color: rgb(190, 188, 70);
+    font-size: 20px;
+    padding: 5px;
+    transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+  }
+ 
+  .ig:hover{
+    box-shadow: inset 0 100px 0 0 rgb(190, 188, 70);
+    color: rgb(0, 9, 32);
+  }
+  
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-contact h3 {
+    height: 100%;
+    position: absolute;
+    left: 2.5%;
+    top:-10;
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    background-color: rgb(190, 188, 70);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(0, 9, 32);
+  }
+  

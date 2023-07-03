@@ -1,6 +1,7 @@
 import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Image from './mockups/HomeBack4h.png';
 import Image3 from './mockups/HomeBack42.png';
 import Image2 from './mockups/HomeBackground2.jpg';
@@ -74,8 +75,8 @@ const items = [
     />
     </div>
       </section>
+      <Footer />
       </div>
-      
     </body>
 
   )

@@ -125,6 +125,7 @@ object-position: 65% 60%;
 }
 
 .img {
+  opacity: 0;
   height: 80%;
   width: 35%;
   position: absolute;
@@ -135,6 +136,7 @@ object-position: 65% 60%;
 
 
 .fade-in2 {
+
   opacity: 0;
   transform: translateX(-20vh);
   visibility: hidden;
@@ -154,7 +156,7 @@ object-position: 65% 60%;
   visibility: hidden;
   transition: opacity 1200ms ease-out, transform 1200ms ease-out,
     visibility 1200ms ease-out;
-  will-change: opacity, transform, visibility;
+
 }
 .fade-in.is-visible {
   opacity: 1;
@@ -171,6 +173,7 @@ object-position: 65% 60%;
 }
 
 .slogan {
+  opacity: 0;
   width: 50%;
   color: rgb(190, 188, 70);
   font-size: 250%;
