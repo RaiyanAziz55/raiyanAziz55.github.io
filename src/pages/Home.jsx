@@ -56,9 +56,6 @@ const items = [
         <img src={Image2} alt="introImg" ref={imgRef} className={imgView ? 'img fade-in is-visible':'img fade-in'}/>
         </div>
       </section>
-      <section className='section1'>
-        <h1 className="category">SERVICES</h1>
-      </section>
       <section className='section2'>
         <h1 className="category">PORTFOLIO</h1>
         <div className='slider'>

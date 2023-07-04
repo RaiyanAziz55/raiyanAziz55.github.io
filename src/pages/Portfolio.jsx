@@ -5,6 +5,8 @@ import './pageCss/Portfolio.css';
 import img1 from './mockups/ffh.jpg';
 import img2 from './mockups/ul.jpg';
 import img3 from './mockups/p.jpg';
+import Footer from '../components/Footer';
+
 
 function Portfolio() {
   const [isHighlight, setIsHighlight] = useState(false);
@@ -55,6 +57,12 @@ function Portfolio() {
         </Link>
       </div>
       </div>
+
+      <div>
+
+
+      </div>
+      <Footer/>
     </body>
   );
 }

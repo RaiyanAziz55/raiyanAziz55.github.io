@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import Navbar from "../components/Navbar";
 import emailjs from '@emailjs/browser';
 import cam from "./mockups/cam.png";
+import Footer from '../components/Footer';
+
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -79,6 +81,7 @@ export default function Contact() {
           </div>
           <button type="submit">SEND</button>
         </form>
+        <Footer/>
       </div>
       </body>
     );

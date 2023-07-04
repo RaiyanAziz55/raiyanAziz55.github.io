@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p>&copy; 2023 LUMIN FILMS. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import aboutMeIMg from './mockups/aboutMe.jpg';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
+import Footer from '../components/Footer';
 
 export default function About() {
   return (
@@ -29,7 +30,7 @@ export default function About() {
             </div>
           </div>
         </section >
-        <section></section>
+        <Footer/>
       </body>
 
   );

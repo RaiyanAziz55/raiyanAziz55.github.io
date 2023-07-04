@@ -1,12 +1,23 @@
 footer {
+    border-top: solid 5px rgb(190, 188, 70);
     position: relative;
+    top: 25%;
     background-color: rgb(0, 9, 32);
     color: rgb(190, 188, 70);
     padding: 40px 0;
     overflow-y: hidden;
     height: 35vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+
   }
+  .quicklinks ul{
+
+    position: relative;
+    left: -5%;
+  }
+
 
   .quicklinks ul li{
     list-style: none;
@@ -23,6 +34,12 @@ footer {
     transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
   }
 
+
+  .quicklinks ul li:hover{
+    box-shadow: inset 0 100px 0 0 rgb(190, 188, 70);
+    color: rgb(0, 9, 32);
+  }
+
   .footer-content{
     width: 100vw;
   }
@@ -30,15 +47,15 @@ footer {
   .social{
     font-size: 24px;
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 75%;
   }
 
   .ql{
     font-size: 24px;
     position: absolute;
-    top: 0;
-    left: 45%;
+    top: 5%;
+    left: 45.5%;
   }
 
 

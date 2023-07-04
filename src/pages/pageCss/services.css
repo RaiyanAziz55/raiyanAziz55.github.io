@@ -1,11 +1,62 @@
 
 
-  .firstImg{
-    width: 100%;
-    height: 750px;
-  }
-
   section {
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
+    background-color: rgb(0, 9, 32);
+  }
+
+  .Service1{
+    font-family: "beck";
+    height: 50vh;
+    background-color: rgb(190, 188, 70);
+    display: grid;
+    padding: 120px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Service1 h3{
+    height: 5%;
+    color: rgb(0, 9, 32);
+    font-size: 50px;
+  }
+
+  .Service1 p{
+    position: relative;
+    top: -50%;
+    color: rgb(0, 9, 32);
+    font-size: 20px;
+  }
+
+  .Scontents{
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-gap: 50px;
+    align-items: center;
+  }
+
+  .Scontents div {
+    padding: 10%;
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    border: solid 2.5px rgb(190, 188, 70);
+  }
+
+  .Scontents div text {
+    font-family: "beck";
+    transform: scale(1.1, 1.5);
+    font-size: 32px;
+    position: relative;
+    top: 30%;
+  }
+
+  .Scontents div p{
+    position: relative;
   }
