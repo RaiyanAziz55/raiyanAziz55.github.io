@@ -59,10 +59,7 @@ function Portfolio() {
       </div>
 
       <div>
-
-
       </div>
-      <Footer/>
     </body>
   );
 }
