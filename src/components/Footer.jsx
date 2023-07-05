@@ -23,7 +23,7 @@ const Footer = () => {
           <p className='ig'>
           <Link to="https://www.instagram.com/photogbyaziz/" target="_blank" rel="noopener noreferrer">
             Instagram
-</Link></p>
+          </Link></p>
         </div>
       </div>
       <div className="footer-bottom">

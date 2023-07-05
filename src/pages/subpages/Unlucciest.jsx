@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar";
 import Modal from '../../components/Modal';
 
 import '../pageCss/Portfolio.css';
-import Footer from '../../components/Footer';
+
 
 function Unlucciest() {
     const [selectedImg, setSelectedImg] = useState(null);

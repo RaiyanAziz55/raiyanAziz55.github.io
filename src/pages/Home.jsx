@@ -20,9 +20,14 @@ function Home() {
   const { ref:txtRef, inView:txtView } = useInView();
 
   const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
+    720: {
+      items: 1,
+      itemsFit: 'fill',
+  },
+  1024: {
+      items: 3,
+      itemsFit: 'contain',
+  }
 };
 
 const items = [
@@ -48,16 +53,18 @@ const items = [
           <img src={Image} alt="background" className='background'></img>
           <img src={Image3} alt="background" className='background2'></img>
           <text id="introText">LUMIN FILMS</text>
-          <text className='introPara'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse est corporis praesentium ad quo maiores, harum deserunt reiciendis dolorem maxime iusto distinctio labore iure rerum earum illum illo consequatur totam!</text>
+          <text className='introPara'>Bringing everybody's inner model out.</text>
       </header>
       <section className='contents'>
         <div className='inside'>
-        <h1 ref={txtRef} className={txtView ? 'slogan fade-in2 is-visible':'img fade-in2'}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sint aliquam voluptate atque nihil voluptatibus non voluptates est impedit, molestias laudantium quos tempora, explicabo magni officiis veniam dolorem cupiditate ullam.</h1>
+        <h1 ref={txtRef} className={txtView ? 'slogan fade-in2 is-visible':'slogan fade-in2'}>
+        I am Raiyan Aziz, the founder of Lumin Films. As a passionate photographer, my mission is to enhance the beauty of every individual I capture through my lens. If you are seeking someone who can expertly immortalize your moments, you have come to the perfect destination. This portfolio showcases a compilation of my work with a diverse range of wonderful clients. Please feel free to explore and appreciate the entirety of my portfolio!
+          </h1>
         <img src={Image2} alt="introImg" ref={imgRef} className={imgView ? 'img fade-in is-visible':'img fade-in'}/>
         </div>
       </section>
       <section className='section2'>
-        <h1 className="category">PORTFOLIO</h1>
+        <h1 className="category">PORTFOLIO PREVIEW</h1>
         <div className='slider'>
         <AliceCarousel
          autoPlayStrategy={'none'}
@@ -65,7 +72,7 @@ const items = [
         autoPlay={true}
         autoPlayInterval={2000}
         mouseTracking = {false}
-        paddingLeft={50}
+        paddingLeft={0}
         items={items}
         responsive={responsive}
         controlsStrategy="alternate"

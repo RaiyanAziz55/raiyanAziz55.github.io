@@ -49,7 +49,9 @@ export default function Contact() {
         <div>
         <div className='section1'>
         <h1 className='T4'>LET'S TALK!</h1>
-        <text className='t2'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea eius velit sint aliquam laudantium quas expedita. Magnam molestiae labore sapiente non repudiandae vero iste earum quae alias iusto? Consequatur corrupti sapiente magni quod et!</text>
+        <text className='t2'> 
+        IF YOU HAVE INQUIRIES OR QUESTIONS YOU CAN JUST SEND ME AN EMAIL AND I WILL REPLY ASAP. EVEN IF YOU HAVE A JOB OFFER, YOU CAN CONTACT ME.
+        </text>
         <img src={cam} className="cam" alt="cam"/>
         </div>
         <form onSubmit={handleSubmit} className="contact-form">

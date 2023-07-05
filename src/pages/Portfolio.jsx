@@ -5,7 +5,7 @@ import './pageCss/Portfolio.css';
 import img1 from './mockups/ffh.jpg';
 import img2 from './mockups/ul.jpg';
 import img3 from './mockups/p.jpg';
-import Footer from '../components/Footer';
+
 
 
 function Portfolio() {
@@ -18,7 +18,7 @@ function Portfolio() {
     <body>
       <Navbar />
       <div className='portTitle'>
-    <h1 >MY COLLECTION</h1>
+    <h1 >MY COLLECTION h</h1>
     </div>
   <div className='grids'>
       <div className='folders'>
@@ -57,7 +57,6 @@ function Portfolio() {
         </Link>
       </div>
       </div>
-
       <div>
       </div>
     </body>

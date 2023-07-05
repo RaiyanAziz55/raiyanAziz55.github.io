@@ -1,7 +1,7 @@
 import ImageGrid from '../../components/ImageGrid';
 import React, {useState} from 'react';
 import Navbar from "../../components/Navbar";
-import Footer from '../../components/Footer';
+
 import '../pageCss/Portfolio.css';
 import Modal from '../../components/Modal';
 
