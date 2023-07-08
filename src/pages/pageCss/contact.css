@@ -24,9 +24,10 @@ body {
   }
 
   .t2{
+    font-family: "lav";
     position: absolute;
     left: 10%;
-    top: 25%;
+    top: 35%;
     font-size: 25px;
     width: 700px;
     height: 100px;

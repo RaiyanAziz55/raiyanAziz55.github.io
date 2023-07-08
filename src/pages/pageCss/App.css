@@ -229,8 +229,11 @@ object-position: 65% 60%;
   }
 }
 @media (width <=720px) {
+  .section2{
+    height: 105vh;
+  }
   .contents {
-    height: 200%;
+    height: 250%;
   }
   .inside {
     display: grid;
