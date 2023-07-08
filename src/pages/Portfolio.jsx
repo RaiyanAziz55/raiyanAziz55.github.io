@@ -18,7 +18,7 @@ function Portfolio() {
     <body>
       <Navbar />
       <div className='portTitle'>
-    <h1 >MY COLLECTION h</h1>
+    <h1 >MY COLLECTIONS</h1>
     </div>
   <div className='grids'>
       <div className='folders'>

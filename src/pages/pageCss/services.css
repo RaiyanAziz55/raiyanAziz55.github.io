@@ -18,14 +18,17 @@
   }
 
   .Service1 h3{
-    height: 5%;
+    position: relative;
+    height: 100%;
+    width: 100vw;
     color: rgb(0, 9, 32);
     font-size: 50px;
   }
 
   .Service1 p{
+    height: 100%;
+    width: 100vw;
     position: relative;
-    top: -50%;
     color: rgb(0, 9, 32);
     font-size: 20px;
   }
@@ -47,12 +50,12 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    border: solid 2.5px rgb(190, 188, 70);
+    box-shadow: 20px 10px 20px rgb(190, 188, 70);
   }
 
   .Scontents div text {
-    font-family: "beck";
-    transform: scale(1.15, 1.5);
+    font-family: "lav";
+    transform: scale(1.25, 1.5);
     font-size: 36px;
     position: relative;
     top: 30%;
@@ -61,5 +64,30 @@
   .Scontents div p{
     position: relative;
     font-size: 20px;
-    font-family: "beck";
+    font-family: "lav";
+  }
+
+  @media (width <=720px) {
+    .Service1 p{
+      text-align: center;
+      bottom: 50%;
+      font-size: 14px;
+    }
+    .Service1 h3{
+      bottom: 10%;
+      text-align: center;
+      font-size: 36px;
+    }
+    .Scontents{
+      height: 200%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .Scontents div {
+      height: 100%;
+    }
+    .Scontents div text {
+      left: 5%;
+      top: 0%;
+      font-size: 30px;
+    }
   }

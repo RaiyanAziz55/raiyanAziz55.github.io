@@ -94,6 +94,31 @@ body {
   button:hover {
     background-color: rgb(140, 138, 0); /* Change the button background color on hover */
   }
+
+  @media (width <=720px) {
+    body{
+      overflow-x: hidden;
+    }
+    .cam{
+      display: none;
+    }
+    input,
+  textarea {
+    width: 90vw;
+  }
+  .T4{
+    font-size: 35px;
+  }
+
+  .t2{
+    font-size: 16px;
+    width: 300px;
+    top: 27.5%;
+    left: 7.5%;
+  }
+
+
+  }
   
   @font-face {
     font-family: 'Kingkey';

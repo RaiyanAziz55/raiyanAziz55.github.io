@@ -21,7 +21,7 @@ export default function About() {
           </div>
           <div className='txtCont1'>
             <h1 className='title'>HELLO! I AM RAIYAN AZIZ.</h1>
-            <div>
+            <div className='p1'>
               <text className='aboutMeTxt'>
               I have been practicing photography for over two years, honing my skills and exploring different styles through collaborations with a diverse range of clients. In addition to working with two start-up brands, I have had the privilege of partnering with numerous exceptional clients on various projects.
               </text>
@@ -41,7 +41,7 @@ export default function About() {
           <ParallaxProvider>
             <ParallaxBanner
       layers={[{ image: cam, speed: -15 }]}
-      className="pic"
+      className="cam1"
     />
     </ParallaxProvider>
           </div>

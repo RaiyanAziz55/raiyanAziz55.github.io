@@ -176,11 +176,12 @@ object-position: 65% 60%;
 }
 
 .slogan {
+  line-height: 2;
   opacity: 0;
   width: 50%;
   color: rgb(190, 188, 70);
   font-size: 200%;
-  font-family: "beck";
+  font-family: "lav";
   font-weight: lighter;
   position: absolute;
   top: 12.5%;
@@ -237,16 +238,19 @@ object-position: 65% 60%;
     position: absolute;
   }
   .img {
+    bottom: 7.5%;
     position: absolute;
     left: 0;
     width: 100%;
     height: 50%;
   }
   .slogan{
+
+    letter-spacing: 2px;
     position: absolute;
     top: 5%;
     width: 90%;
-    height: 50%;
+    height: 20%;
     font-size: 125%;
   }
 
@@ -276,4 +280,19 @@ object-position: 65% 60%;
 @font-face {
   font-family: "beck";
   src: url("../mockups/beck.ttf") format("openType");
+}
+
+@font-face {
+  font-family: "megan";
+  src: url("../mockups/megan.otf") format("openType");
+}
+
+@font-face {
+  font-family: "vin";
+  src: url("../mockups/Vin.ttf") format("openType");
+}
+
+@font-face {
+  font-family: "lav";
+  src: url("../mockups/lav.otf") format("openType");
 }
