@@ -23,7 +23,7 @@ const UseFirestore = (folderName) => {
 
   useEffect(() => {
     getImgList();
-  }, []);
+  });
 
   return { imgs };
 };

@@ -11,7 +11,7 @@ const Modal = ( {selectedImg, setSelectedImg}) => {
     
     return (
         <div className="backdrop" onClick={handleClick}>
-            <img src={selectedImg} alt = "Image"/>
+            <img src={selectedImg} alt = ""/>
         </div>
     )
 
