@@ -18,22 +18,23 @@
   }
 
   .Service1 h3{
+    top: 25%;
     text-align: center;
     position: relative;
     height: 100%;
     width: 100vw;
     color: rgb(0, 9, 32);
-    font-size: 75px;
+    font-size: 125px;
   }
 
   .Service1 p{
-    top: -125px;
+    top: -25px;
     text-align: center;
     height: 100%;
     width: 100vw;
     position: relative;
     color: rgb(0, 9, 32);
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .Scontents{
