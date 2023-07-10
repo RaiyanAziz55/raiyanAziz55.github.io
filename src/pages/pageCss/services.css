@@ -9,7 +9,7 @@
   .Service1{
     font-family: "beck";
     height: 50vh;
-    background-color: rgb(190, 188, 70);
+    background-color: rgb(162, 160, 51);
     display: grid;
     padding: 120px;
     grid-template-columns: repeat(1, 1fr);

@@ -1,7 +1,7 @@
 import React, {useState, useRef} from "react";
 import './css/Navbar.css';
 import { Link } from "react-router-dom";
-
+import logo from '../pages/mockups/logo3.png';
 
 
 export default function Navbar() {
@@ -47,15 +47,14 @@ export default function Navbar() {
     return (
         <nav className='nav'>
             <div className={isMenu ? 'navbar active' : 'navbar'}>
+           <Link to="/"><img src={logo} alt="background" className='logo'></img></Link>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/portfolio" ref={elementRef}
                      onMouseEnter={() => setIsShow(true)}
                      onMouseLeave={handleMouseLeave}
                      className={isHighlight ? 'dropdownPort active' : ''}>
                      Portfolio ⌵</Link>
                     <div ref={elementRef2} 
-                    onMouseEnter={() => setIsHighlight(true)}
                     className={isShow ? 'dropdown-content is-visible' : 'dropdown-content'}  onMouseLeave={handleMouseLeave2}>
                     <li><Link to="/portfolio/ffh">FFH</Link></li>
                     <li><Link to="/portfolio/unlucciest">Unlucciest</Link></li>
