@@ -13,7 +13,7 @@ function ImageGrid( {folderName, setSelectedImg}) {
     <body>
       <div className='img-wrap'>
         {imgs && imgs.map((img) => (
-          <img src={img.url} alt="sumthing" key={img.id} 
+          <img loading='lazy' src={img.url} alt="sumthing" key={img.id} 
           onClick = {() => setSelectedImg(img.url)}
           />
         ))}

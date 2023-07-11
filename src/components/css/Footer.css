@@ -67,7 +67,15 @@ footer {
   left: 45.5%;
 }
 
-.ig a{
+.igsec img{
+  top: 17.5%;
+  left:79.5%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.ig {
   position: absolute;
   top: 15%;
   left: 80%;
@@ -83,16 +91,6 @@ footer {
   text-decoration: none; /* Remove underline */
 }
 
-.ig a:hover {
-  box-shadow: inset 0 100px 0 0 rgb(190, 188, 70);
-  color: rgb(0, 9, 32);
-}
-
-
-.ig:hover {
-  box-shadow: inset 0 100px 0 0 rgb(190, 188, 70);
-  color: rgb(0, 9, 32);
-}
 
 .footer-contact {
   text-decoration: none !important;

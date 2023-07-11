@@ -10,6 +10,10 @@ import FFH from './pages/subpages/FFH';
 import Unlucciest from './pages/subpages/Unlucciest';
 import Personal from './pages/subpages/personal';
 
+
+
+
+
 const swipeTransition = {
   initial: { opacity: 0},
   animate: { opacity: 1 },

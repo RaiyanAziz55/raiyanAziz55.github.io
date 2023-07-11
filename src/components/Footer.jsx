@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/Footer.css';
 import { Link } from "react-router-dom";
+import iglogo from '../pages/mockups/iglogo.png';
 
 const Footer = () => {
   return (
@@ -20,10 +21,12 @@ const Footer = () => {
         </ul>
 
           </div>
-          <p className='ig'>
-          <Link to="https://www.instagram.com/photogbyaziz/" target="_blank" rel="noopener noreferrer">
-            Instagram
-          </Link></p>
+          <div className='igsec'>
+          <Link to="https://www.instagram.com/lumin_films/" target="_blank" rel="noopener noreferrer">
+          <p className='ig'>Instagram</p>
+          <img src={iglogo} alt="background"></img>
+          </Link>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">
