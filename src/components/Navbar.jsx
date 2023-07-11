@@ -46,8 +46,8 @@ export default function Navbar() {
 
     return (
         <nav className='nav'>
+          <Link to="/"><img src={logo} alt="background" className='logo'></img></Link>
             <div className={isMenu ? 'navbar active' : 'navbar'}>
-           <Link to="/"><img src={logo} alt="background" className='logo'></img></Link>
                 <ul>
                     <li><Link to="/portfolio" ref={elementRef}
                      onMouseEnter={() => setIsShow(true)}
