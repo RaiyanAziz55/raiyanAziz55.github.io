@@ -1,75 +1,79 @@
+/* Define CSS Variables */
+:root {
+  --primary-color: rgb(190, 188, 70);
+  --background-color: rgb(0, 9, 32);
+}
+
 footer {
-  border-top: solid 5px rgb(190, 188, 70);
+  border-top: solid 5px var(--primary-color);
   position: relative;
   top: 5%;
-  background-color: rgb(0, 9, 32);
-  color: rgb(190, 188, 70);
+  background-color: var(--background-color);
+  color: var(--primary-color);
   padding: 40px 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
   height: 37.5vh;
   width: 100vw;
   display: flex;
   align-items: center;
-}
-.quicklinks{
-  color: rgb(190, 188, 70);
+  overflow: hidden;
 }
 
-.quicklinks ul {
-  list-style: none;
-  overflow-y: hidden;
+.quicklinks {
+  color: var(--primary-color);
+  overflow: hidden;
   position: relative;
   left: -5%;
 }
 
-.quicklinks ul li a{
+.quicklinks ul {
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  left: -5%;
+}
+
+.quicklinks ul li a {
   line-height: 0.75;
   font-family: "lav";
   text-align: start;
-  overflow-y: hidden;
   margin: 10px;
   padding-inline: 10px;
-  text-decoration: none ;
-  color: rgb(190, 188, 70);
+  text-decoration: none;
+  color: var(--primary-color);
   font-size: 20px;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .quicklinks ul li a:hover {
-  box-shadow: inset 0 100px 0 0 rgb(190, 188, 70);
-  color: rgb(0, 9, 32);
+  box-shadow: inset 0 100px 0 0 var(--primary-color);
+  color: var(--background-color);
 }
 
-
-.footer-content {
-  overflow-y: hidden;
+.footer-content,
+.footer-contact,
+.footer-bottom {
+  overflow: hidden;
   width: 100vw;
 }
 
-.social {
-  overflow-y: hidden;
+.social,
+.ql {
   font-size: 24px;
   position: absolute;
   top: 5%;
-  left: 75%;
 }
 
 .ql {
-  overflow-y: hidden;
-  font-size: 24px;
-  position: absolute;
-  top: 5%;
   left: 45.5%;
 }
 
-.igsec img{
+.igsec img {
   top: 17.5%;
-  left:79.5%;
+  left: 79.5%;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -79,18 +83,14 @@ footer {
   position: absolute;
   top: 15%;
   left: 80%;
-  text-decoration: none;
-  width: 120px;
-  margin: 10px;
-  padding-inline: 10px;
   font-family: "lav";
-  color: rgb(190, 188, 70);
+  color: var(--primary-color);
   font-size: 20px;
   padding: 5px;
-  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
-  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+  text-decoration: none;
+  /* Remove underline */
 }
-
 
 .footer-contact {
   text-decoration: none !important;
@@ -101,7 +101,6 @@ footer {
 }
 
 .footer-contact h3 {
-  height: 100%;
   position: absolute;
   left: 2.5%;
   top: -10;
@@ -115,7 +114,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: rgb(190, 188, 70);
+  background-color: var(--primary-color);
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
@@ -127,7 +126,7 @@ footer {
 .footer-bottom p {
   margin: 0;
   font-size: 14px;
-  color: rgb(0, 9, 32);
+  color: var(--background-color);
 }
 
 @media (max-width: 720px) {
@@ -137,29 +136,33 @@ footer {
     font-size: 22px;
     transform: scale(1, 1.25);
   }
+
   .social {
-    left: 75%;
     font-size: 14px;
   }
+
   .ql {
     left: 47.5%;
     font-size: 14px;
   }
-  .quicklinks ul li a{
+
+  .quicklinks ul li a {
     bottom: 10px;
     font-size: 16px;
   }
+
   .quicklinks ul {
     height: 80%;
     left: 15%;
   }
+
   .ig {
     top: 27.5%;
     left: 74%;
     font-size: 16px;
   }
 
-  .igsec img{
+  .igsec img {
     left: 76%;
     top: 30%;
     width: 15px;
