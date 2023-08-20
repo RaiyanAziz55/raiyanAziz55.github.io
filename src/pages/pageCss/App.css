@@ -102,6 +102,7 @@ section {
   position: absolute;
   object-fit: cover;
   z-index: -1;
+  object-position: 65% 60%;
 }
 
 
@@ -236,13 +237,17 @@ section {
 }
 @media (width <=720px) {
   #introText {
+    width: 75px;
     transform: translateZ(-10px) scale(2.2) scale(1, 1.5);
     line-height: 0.75;
-    top: 30%;
-    font-size: 100px;
+    top: -10%;
+    left: -70%;
+    font-size: 70px;
   }
   .introPara{
-    font-size: 19px;
+    width: 150px;
+    left: -50px;
+    font-size: 12px;
   }
   .section2{
     height: 105vh;
