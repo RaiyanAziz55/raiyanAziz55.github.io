@@ -9,24 +9,12 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import img1 from './mockups/m2.jpg';
 import img2 from './mockups/m1.jpg';
 import img3 from './mockups/IMG3.jpg';
-import img4 from './mockups/IMG1.jpg';
 
 
 
 function Home() {
   const { ref:imgRef, inView:imgView } = useInView();
   const { ref:txtRef, inView:txtView } = useInView();
-
-  const responsive = {
-    720: {
-      items: 1,
-      itemsFit: 'fill',
-  },
-  1024: {
-      items: 3,
-      itemsFit: 'contain',
-  }
-};
 
 
 

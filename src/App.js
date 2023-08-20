@@ -1,21 +1,18 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Services from './pages/Services';
-import About from './pages/About';
-import FFH from './pages/subpages/FFH';
-import Unlucciest from './pages/subpages/Unlucciest';
-import Personal from './pages/subpages/personal';
 
-
-
-
+const Home = lazy(() => import('./pages/Home'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Services = lazy(() => import('./pages/Services'));
+const About = lazy(() => import('./pages/About'));
+const FFH = lazy(() => import('./pages/subpages/FFH'));
+const Unlucciest = lazy(() => import('./pages/subpages/Unlucciest'));
+const Personal = lazy(() => import('./pages/subpages/personal'));
 
 const swipeTransition = {
-  initial: { opacity: 0},
+  initial: { opacity: 0 },
   animate: { opacity: 1 },
   exit: { opacity: 0 },
 };
@@ -40,9 +37,11 @@ const App = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
-            <Route path="/portfolio/ffh" element={<FFH />} />
-            <Route path="/portfolio/unlucciest" element={<Unlucciest />} />
-            <Route path="/portfolio/personal" element={<Personal />} />
+            <Route path="/portfolio" element={<Portfolio />}>
+              <Route path="ffh" element={<FFH />} />
+              <Route path="unlucciest" element={<Unlucciest />} />
+              <Route path="personal" element={<Personal />} />
+            </Route>
           </Routes>
         </motion.div>
       </AnimatePresence>

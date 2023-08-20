@@ -3,7 +3,7 @@ body {
     margin: 0;
     height: auto;
     width: 100vw;
-    background-color: rgb(0, 9, 32); /* Set the dark background color */
+    background-color: var(--background-color); /* Set the dark background color */
     color: var(--primary-color); /* Set the light text color */
   }
   
