@@ -2,14 +2,12 @@ import './pageCss/App.css';
 import React from 'react';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Image from './mockups/HomeBack4h.png';
-import Image3 from './mockups/HomeBack42.png';
+import Image from './mockups/home.jpg';
 import Image2 from './mockups/HomeBackground2.jpg';
 import { useInView } from 'react-intersection-observer';
-import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import img1 from './mockups/IMG4.jpg';
-import img2 from './mockups/IMG2.jpg';
+import img1 from './mockups/m2.jpg';
+import img2 from './mockups/m1.jpg';
 import img3 from './mockups/IMG3.jpg';
 import img4 from './mockups/IMG1.jpg';
 
@@ -30,20 +28,7 @@ function Home() {
   }
 };
 
-const items = [
-  <div className='item'>
-  <img src={img1} alt="img1" id="img1" key="1"/>
-  </div>,
-  <div className='item'>
-  <img src={img2}  alt="img2" id="img1" key="2"/>
-  </div>,
-  <div className='item'>
-  <img src={img3}  alt="img3" id="img1" key="3"/>
-  </div>,
-  <div className='item'>
-  <img src={img4}  alt="img4" id="img1" key="4"/>
-  </div>,
-];
+
 
   return (
     <body>
@@ -51,7 +36,6 @@ const items = [
       <div className="container">
       <header>
           <img src={Image} alt="background" className='background'></img>
-          <img src={Image3} alt="background" className='background2'></img>
           <text id="introText">LUMIN FILMS</text>
           <text className='introPara'>Bringing everybody's inner model out.</text>
       </header>
@@ -66,18 +50,10 @@ const items = [
       <section className='section2'>
         <h1 className="category">PORTFOLIO PREVIEW</h1>
         <div className='slider'>
-        <AliceCarousel
-         autoPlayStrategy={'none'}
-      infinite={true}
-        autoPlay={true}
-        autoPlayInterval={2000}
-        mouseTracking = {false}
-        paddingLeft={0}
-        items={items}
-        responsive={responsive}
-        controlsStrategy="alternate"
-    />
-    </div>
+        <img src={img1} alt="img1" />
+        <img src={img2} alt="img1" />
+        <img src={img3} alt="img1" />
+        </div>
       </section>
       <Footer />
       </div>
