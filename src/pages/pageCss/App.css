@@ -250,7 +250,8 @@ section {
     font-size: 12px;
   }
   .section2{
-    height: 105vh;
+    margin-top: 2rem;
+    height: auto;
   }
   .contents {
     height: 250%;
@@ -276,7 +277,9 @@ section {
     height: 20%;
     font-size: 125%;
   }
-
+  .slider{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 

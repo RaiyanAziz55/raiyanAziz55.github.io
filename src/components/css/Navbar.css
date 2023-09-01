@@ -127,6 +127,7 @@ body {
 
 @media (width <=700px) {
   .dropdown-content {
+    color: var(--primary-color);
     display: none;
     font-size: 15px;
     border: none;
@@ -138,6 +139,7 @@ body {
   }
 
   .navbar li a {
+    color: var(--primary-color);
     margin: 0;
     padding: 15px;
   }
@@ -152,6 +154,7 @@ body {
   }
 
   .nav {
+    color: var(--primary-color);
     flex-direction: column;
     align-items: flex-start;
     border: none;
@@ -164,10 +167,12 @@ body {
   }
 
   .navbar li {
+    color: var(--primary-color);
     text-align: center;
 
   }
   .navbar.active {
+    color: var(--primary-color);
     display: flex;
     bottom: 0;
     z-index: 1;
